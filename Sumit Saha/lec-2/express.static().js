@@ -7,7 +7,7 @@ const app = express();
 // For Normal access use this --- localhost:3000/love.txt
 app.use(express.static(__dirname + '/public/'))
 
-// For root index.html replace and access by any name --- localhost:3000/(anytext)
+// For root index.html replace and access by any name --- localhost:3000/(noTextNeed)
 app.use(express.static(__dirname + '/public/',{
     index : 'love.txt'
 }));
